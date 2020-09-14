@@ -1,27 +1,17 @@
-# Movedom
+# moveable-box-generator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+Angular version 7.3.8.
 
-## Development server
+## Steps
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Download the folder
+2. npm install
+3. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
-## Code scaffolding
+## Actions
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. Click right side `'+' (plus symbol) or above of the Box`. Box will create in left side window. you can add 'n' number of boxs.
+2. You can able to select box by clicking.
+3. Use `W-A-S-D` or `arrow keys` to move the box inside that container.
+4. Use `delete` key on the keyboard for to remove the selected box.
+5. Use `esc` key for toggle(it will act like a toggle for listener, when that is active key functions will be disable).
