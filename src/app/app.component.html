@@ -1,0 +1,28 @@
+<div id="container" class="float-left full-w full-h">
+    <div id="container_l" class="float-left">
+        <div *ngFor="let l of mel; let i=index" [ngStyle]="l['ls']" (click)="mef($event, l)" id="elem_{{l['id']}}" class="m_box" [ngClass]="{active: smed['id'] == l['id']}">{{l['n']+' '+ (l['id']+1)}}</div>
+        <div id="s_box" class="ui-widget-content" [ngStyle]="sls"> 
+            <div class="s_inr"></div>
+            <div class="TR resize_btn"></div>
+            <div class="TC resize_btn"></div>
+            <div class="TL resize_btn"></div>
+            <div class="LC resize_btn"></div>
+            <div class="RC resize_btn"></div>
+            <div class="BL resize_btn"></div>
+            <div class="BC resize_btn"></div>
+            <div class="BR resize_btn"></div>
+        </div>  
+        <div class="esc_box" *ngIf="!lact">Deactive Mode</div>
+    </div>
+    <div id="container_r" class="float-left full-h">
+        <div class="container_rh">
+            Element
+        </div>
+        <div class="full-w container_rb">
+            <div class="container_rbe" *ngFor="let l of el">
+                <div class="rbe_box" (click)="ef(l)">{{l['n']}}</div>
+                <div class="rbe_add" (click)="ef(l)">+</div>
+            </div> 
+        </div>
+    </div>
+</div>
